@@ -1,7 +1,8 @@
+#必要なモノをimportする
 import numpy as np
 import cv2
 from matplotlib import pyplot as plt
-
+#imgに画像を入れる
 img = cv2.imread('onepi.jpg',0)
 
 dft = cv2.dft(np.float32(img),flags = cv2.DFT_COMPLEX_OUTPUT)
